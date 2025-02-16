@@ -79,7 +79,7 @@ img {
     font-size: 1rem;
     font-weight: 100;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 1rem;
     transform: translateY(-50%);
     pointer-events: none;
@@ -90,7 +90,7 @@ img {
     background-color: transparent;
     color: var(--whiteColor);
     font-family: chm-font-2;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1rem;
     line-height: 1.5rem;
     border: 2px solid var(--signinColor);
     border-radius: 10px;
@@ -118,7 +118,7 @@ img {
     font-size: 0.8rem;
 }
 .email__wrap{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .sign-btn{
     display: flex;
