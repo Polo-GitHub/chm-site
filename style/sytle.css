@@ -1,0 +1,184 @@
+:root{
+    --backdrop-color: #181818;
+    --btn-color: rgb(171 229 180);
+    --error-color: rgb(217 24 72);
+    --text-Color: #868889;
+    --whiteColor: #ffffff;
+    --lightbackground: #f0f0f0;
+    --inputColor: #465a7e1e;
+    --signinColor: #3a3a3a;
+    
+    
+}
+
+@font-face {
+    font-family: 'chm-font-1';
+    src: url('../font/chm.woff2') format('woff2'),
+}
+@font-face {
+    font-family: 'chm-font-2';
+    src: url('../font/chm-f.woff2') format('woff2'),
+}
+
+
+
+/* RESET */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+html,
+body {
+    font-size: 16px;
+    /* background-color: var(--whiteColor); */
+    background-color: var(--backdrop-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+    color: inherit;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 0 1rem 2rem 1rem;
+   
+}
+.chm__logo{
+    width: 125px;
+    height: 36px;
+    margin: 2rem 0 2rem 0;
+}
+.input__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+
+.chm__label{
+    color: var(--text-Color);
+    font-family: chm-font-2;
+    font-size: 1rem;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+}
+.chm__input{
+    position: relative;
+    background-color: transparent;
+    color: var(--whiteColor);
+    font-family: chm-font-2;
+    padding: 0.8rem 1rem;
+    line-height: 1.5rem;
+    border: 2px solid var(--signinColor);
+    border-radius: 10px;
+    outline-color: var(--whiteColor); 
+}
+.input__wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: var(--text-Color);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+}
+.input__wrapper:hover::before {
+    opacity: 1; 
+}
+
+.chm__input:focus + .chm__label,
+.chm__input:not(:placeholder-shown) + .chm__label {
+    top: -8%;
+    font-size: 0.8rem;
+}
+.email__wrap{
+    margin-bottom: 1rem;
+}
+.sign-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chm-font-1;
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--signinColor);
+    outline: none;
+    border: none;
+    color: var(--text-Color);
+    line-height: 1.5rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    cursor: not-allowed;
+}
+.chm__paragraph > p{
+    font-family: chm-font-1;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--whiteColor);
+    margin-bottom: 2rem;
+    /* color: var(--backdrop-color); */
+    /* opacity: 0.9; */
+}
+.chm__links{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2.8rem;
+    color: var(--whiteColor);
+    /* color: var(--backdrop-color); */
+    /* opacity: 0.9; */
+}
+.chm__links > a{
+    font-family: chm-font-1;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+.chm__links > a:hover{
+    opacity: 0.5;
+}
+.chm__copyright > p{
+    font-family: chm-font-2;
+    font-size: 0.6rem;
+    color: var(--text-Color);
+    margin-bottom: 0.8rem;
+    /* opacity: 0.5; */
+}
+.chm__sub-copyright > p{
+    font-family: chm-font-2;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    font-weight: 100;
+    color: var(--text-Color)
+    /* color: var(--whiteColor); */
+    /* opacity: 0.5; */
+    /* color: var(--backdrop-color); */
+
+}
