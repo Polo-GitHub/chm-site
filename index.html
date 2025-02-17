@@ -9,7 +9,7 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./style/all.min.css">
-   <link rel="stylesheet" href="./style/sytle.css">
+    <link rel="stylesheet" href="./style/sytle.css">
     <script defer src="./script/script.js"></script>
 </head>
 <body>
@@ -19,17 +19,18 @@
             <form action="#" class="chm__form">
                <div class="chm__form-container">
                 <div class="input__wrapper email__wrap">
+                    <input type="text" class="chm__input" id="email" placeholder="" autofocus>
                     <label for="email" class="chm__label">Email</label>
-                    <input type="text" class="chm__input" id="email" placeholder="" >
                 </div>
                 <div class="input__wrapper">
-                    <label for="password" class="chm__label">Password</label>
                     <input type="password" class="chm__input" id="password" placeholder="">
+                    <label for="password" class="chm__label">Password</label>
                 </div>
                </div>
-                <button type="submit" class="sign-btn">Sign in</button>
+                <button type="submit" class="sign-btn"disabled >Sign in</button>
+                <p class="errormssg">Email and password combination do not match our records.</p>
                 <div class="chm__paragraph">
-                    <p>By clicking “Sign in”, you agree to receive SMS text <br> messages from Chime to verify your identity</p>  
+                   <p>By clicking “Sign in”, you agree to receive SMS text <br> messages from Chime to verify your identity</p>
                 </div>
                 <div class="chm__links">
                     <a href="#">Forgot your email address?</a>
