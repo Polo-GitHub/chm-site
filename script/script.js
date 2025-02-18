@@ -25,11 +25,11 @@ if(eyeIcon){
 
             if(passwordInput.type === "password"){
                 passwordInput.type = "text"
-                eyeIcon.src = "./images/eye-close.png";
+                eyeIcon.src = "./images/eye-open.png";
             }
             else{
                 passwordInput.type = "password"
-                eyeIcon.src = "./images/eye-open.png";
+                eyeIcon.src = "./images/eye-close.png";
             }   
     });
 }
