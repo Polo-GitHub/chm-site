@@ -100,7 +100,18 @@ img {
     transform: translateY(-0.1px);
     font-size: 0.8rem;
 }
-
+.wrap__icon{
+    position: relative;
+}
+.eyeicon{
+    position: absolute;
+    width: 20px;
+    top: 35%;
+    right: 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: none;
+}
 .email__wrap{
     margin-bottom: 1.5rem;
 }
