@@ -2,13 +2,17 @@ function _$(item){
  return document.querySelector(item)
      
 }
-
+const year = _$(".year");
 const chmForm = _$(".chm__form");
 const emailInput = _$("#email");
 const passwordInput = _$("#password");
 const signBtn = _$(".sign-btn");
 const errorMssg = _$(".errormssg");
 const eyeIcon = _$(".eyeicon");
+
+if(year){
+    year.innerHTML = new Date().getFullYear()
+}
 
 if(passwordInput){
     passwordInput.addEventListener("input", ()=>{
