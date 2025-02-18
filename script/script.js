@@ -8,7 +8,31 @@ const emailInput = _$("#email");
 const passwordInput = _$("#password");
 const signBtn = _$(".sign-btn");
 const errorMssg = _$(".errormssg");
+const eyeIcon = _$(".eyeicon");
 
+if(passwordInput){
+    passwordInput.addEventListener("input", ()=>{
+        if(passwordInput.value.length > 0){
+            eyeIcon.style.display = "block";
+        }
+        else{
+            eyeIcon.style.display = "none";
+        }
+    });
+}
+if(eyeIcon){
+    eyeIcon.addEventListener("click", ()=>{
+
+            if(passwordInput.type === "password"){
+                passwordInput.type = "text"
+                eyeIcon.src = "./images/eye-close.png";
+            }
+            else{
+                passwordInput.type = "password"
+                eyeIcon.src = "./images/eye-open.png";
+            }   
+    });
+}
 document.addEventListener("input", ()=>{
     const emailValue = emailInput.value.trim().toLowerCase();
     const passwordValue = passwordInput.value.trim();
