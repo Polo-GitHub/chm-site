@@ -87,6 +87,7 @@ img {
     color: var(--backdrop-color);
     font-family: chm-font-2;
     font-size: 1rem;
+    line-height: 1.2;
     padding: 1.2rem 1rem;
     border: 2px solid var(--text-Color);
     border-radius: 10px;
@@ -97,7 +98,7 @@ img {
 .chm__input:focus + .chm__label,
 .chm__input:not(:placeholder-shown) + .chm__label {
     top: 0;
-    transform: translateY(-0.1px);
+    transform: translateY(0);
     font-size: 0.8rem;
 }
 .wrap__icon{
