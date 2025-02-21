@@ -55,7 +55,8 @@ if(signBtn){
         e.preventDefault()
     const emailValue = emailInput.value.trim().toLowerCase();
     const passwordValue = passwordInput.value.trim();
-    const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-z]{2,}$/
+    const emailRegEx = const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+
     if(!emailRegEx.test(emailValue) || passwordValue.length < 6){
         errorMssg.innerHTML = `Email and password combination do not match our records.`
     }
