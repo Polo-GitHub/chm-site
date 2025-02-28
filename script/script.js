@@ -39,7 +39,7 @@ if(eyeIcon){
 }
 document.addEventListener("input", ()=>{
     const emailValue = emailInput.value.trim().toLowerCase();
-    const passwordValue = passwordInput.value.trim();
+    const passwordValue = passwordInput.value
     if(emailValue !== "" && passwordValue !== "" ){
         signBtn.removeAttribute("disabled");
         signBtn.classList.add("active")
@@ -48,7 +48,7 @@ document.addEventListener("input", ()=>{
         signBtn.setAttribute("disabled", "true");
         signBtn.classList.remove("active");
     }
-    errorMssg.innerHTML = ""
+   
 });
 if(signBtn){
     signBtn.addEventListener("click", (e)=>{
@@ -62,4 +62,5 @@ if(signBtn){
     }
 
     });
+  errorMssg.innerHTML = ""
 }
